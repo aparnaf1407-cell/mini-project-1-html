@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Color Mode Translator</title>
+
+<style>
+    body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, sans-serif;
+        background-color: #ffffff;
+        color: #000000;
+        transition: background-color 0.4s, color 0.4s;
+    }
+
+    /* Top-right link */
+    .top-link {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    .top-link a {
+        text-decoration: none;
+        font-weight: bold;
+        color: #2563eb;
+    }
+
+    .box {
+        text-align: center;
+        padding: 30px;
+        width: 80%;
+        max-width: 500px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    button {
+        margin-top: 20px;
+        padding: 12px 25px;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        background-color: black;
+        color: white;
+        transition: 0.4s;
+    }
+
+    /* Dark Mode */
+    body.dark {
+        background-color: #121212;
+        color: #ffffff;
+    }
+
+    body.dark button {
+        background-color: white;
+        color: black;
+    }
+
+    body.dark .top-link a {
+        color: #93c5fd;
+    }
+</style>
+</head>
+
+<body>
+
+<!-- Right corner link -->
+<div class="top-link">
+    <a href="C:\Users\bavad\Downloads\index 1.html">Index</a>
+</div>
+
+<div class="box">
+    <h1>Color Mode Translator</h1>
+
+    <p>
+        This project is a simple Color Mode Translator that allows users
+        to switch between Light Mode and Dark Mode. It helps improve
+        readability and user comfort by adjusting background and text
+        colors according to the selected mode.
+    </p>
+
+    <p>
+        Click the button below to change the color mode.
+    </p>
+
+    <button onclick="toggleMode()">Switch Mode</button>
+</div>
+
+<script>
+    function toggleMode() {
+        document.body.classList.toggle("dark");
+    }
+</script>
+
+</body>
+</html>
