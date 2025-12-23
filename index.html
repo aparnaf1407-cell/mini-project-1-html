@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Color Mode Translator - Home</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f9fafb;
+        color: #000;
+        transition: 0.4s;
+    }
+
+    header {
+        padding: 20px;
+        text-align: center;
+        background-color: #2563eb;
+        color: white;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding: 15px;
+        background-color: #e5e7eb;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #000;
+        font-weight: bold;
+    }
+
+    main {
+        padding: 40px;
+        text-align: center;
+    }
+
+    .features {
+        max-width: 600px;
+        margin: auto;
+        text-align: left;
+    }
+
+    button {
+        margin-top: 30px;
+        padding: 12px 25px;
+        font-size: 16px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        background-color: #000;
+        color: white;
+    }
+
+    /* Dark Mode */
+    body.dark {
+        background-color: #121212;
+        color: #fff;
+    }
+
+    body.dark header {
+        background-color: #1e40af;
+    }
+
+    body.dark nav {
+        background-color: #1f2933;
+    }
+
+    body.dark nav a {
+        color: #fff;
+    }
+
+    body.dark button {
+        background-color: #fff;
+        color: #000;
+    }
+
+    footer {
+        text-align: center;
+        padding: 15px;
+        background-color: #e5e7eb;
+        margin-top: 40px;
+    }
+
+    body.dark footer {
+        background-color: #1f2933;
+        color: #fff;
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Color Mode Translator</h1>
+    <p>Switch Between Light and Dark Modes Easily</p>
+</header>
+
+<nav>
+    <a href="C:\Users\bavad\OneDrive\aparna\color mode iintroduction.html">
+        Introduction
+    </a>
+    <a href="C:\Users\bavad\OneDrive\aparna\color mode features.html">
+        Features
+    </a>
+    <a href="C:\Users\bavad\OneDrive\aparna\correct different color mode.html">
+        Color Modes
+    </a>
+</nav>
+
+<main>
+    <h2>Welcome</h2>
+    <p>
+        The Color Mode Translator helps users change the appearance of
+        a website by switching between light and dark color themes.
+        This improves readability and reduces eye strain.
+    </p>
+
+    <div class="features">
+        <h3>Features</h3>
+        <ul>
+            <li>Easy Light and Dark mode switching</li>
+            <li>User-friendly interface</li>
+            <li>Modern and responsive design</li>
+            <li>Improves accessibility and comfort</li>
+        </ul>
+    </div>
+
+    <button onclick="toggleMode()">Toggle Color Mode</button>
+</main>
+
+<footer>
+    <p>© 2025 Color Mode Translator | Home Page</p>
+</footer>
+
+<script>
+    function toggleMode() {
+        document.body.classList.toggle("dark");
+    }
+</script>
+
+</body>
+</html>
